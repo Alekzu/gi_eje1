@@ -1,0 +1,173 @@
+/*********** TOP NAVIGATION BAR ***********/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover  #ddd*/
+.topnav a:hover {
+  background-color: #0078d7;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/*para que topnav no se ubique sobre el contenido  */
+.topdiv {
+  margin-top: 55px;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+}
+footer a, footer p{
+  color: #f2f2f2;
+}
+/*ocultar menu en pantallas grandes*/
+.side-menu {
+  display: none;
+  visibility: hidden;
+}
+.topnav .closebtn {
+  display: none;
+  visibility: hidden;
+}
+
+
+/*************  RWD ***********/
+/*
+$lg: 1170px;
+$md: 1024px;
+$sm: 640px;
+$xs: 480px;
+
+$body-font-size: (null: 16, $md: 15, $sm: 14, $xs: 13);
+*/
+@media only screen and (max-width: 575px) {
+  /*.topnav a {
+  padding: 6px 8px;
+  font-size: 14px;
+}*/
+
+/* The side navigation menu */
+.side-menu{
+  font-size:30px;
+  cursor: pointer;
+  visibility: visible;
+  display: inline;
+}
+
+.topnav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 15px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  font-size: 18px;
+}
+
+/* The navigation menu links */
+.topnav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  width: 100%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.topnav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.topnav .closebtn {
+  position: relative;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  visibility: visible;
+  display: inline;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+body {
+ font-size: 13px; 
+}
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .topnav a {
+    padding: 8px 10px;
+    font-size: 15px;
+    display: initial;
+  }
+  body {
+   font-size: 14px; 
+  }
+
+}
+
+@media only screen and ((min-width: 768px) and (max-width: 991.98px) {
+  .topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .topnav a {
+    padding: 9px 11px;
+    font-size: 16px;
+    display: initial;
+}
+body {
+ font-size: 15px; 
+}
+
+}
+
